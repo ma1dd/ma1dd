@@ -1,45 +1,44 @@
 {
-  "name": "sanstar-analytics-frontend",
-  "version": "1.0.0",
-  "description": "Frontend for SanStar Analytics System",
-  "main": "index.js",
-  "homepage": "https://ma1dd.github.io", 
-  
-  "scripts": {
-    "start": "webpack serve --mode development", 
-    "build": "webpack --mode production", 
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  
-  "keywords": [
-    "react",
-    "webpack",
-    "chartjs",
-    "d3"
-  ],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "chart.js": "^4.4.3",
-    "d3": "^7.9.0",
-    "react": "^18.3.1",
-    "react-chartjs-2": "^5.2.0",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^7.9.5"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.3",
-    "@babel/preset-react": "^7.24.7",
-    "babel-loader": "^9.1.3",
-    "css-loader": "^7.1.2",
-    "gh-pages": "^6.3.0",
-    "html-webpack-plugin": "^5.6.0",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.94.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
-  }
+	"name": "sanstar-analytics-frontend",
+	"version": "1.0.0",
+	"description": "Frontend for SanStar Analytics System",
+	"main": "index.js",
+	"homepage": "https://ma1dd.github.io/ma1dd",
+	"scripts": {
+		"start": "webpack serve --mode development",
+		"build": "webpack --mode production",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	},
+	"keywords": [
+		"react",
+		"webpack",
+		"chartjs",
+		"d3"
+	],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"chart.js": "^4.4.3",
+		"d3": "^7.9.0",
+		"react": "^18.3.1",
+		"react-chartjs-2": "^5.2.0",
+		"react-dom": "^18.3.1",
+		"react-router-dom": "^7.9.5"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.25.2",
+		"@babel/preset-env": "^7.25.3",
+		"@babel/preset-react": "^7.24.7",
+		"babel-loader": "^9.1.3",
+		"copy-webpack-plugin": "^13.0.1",
+		"css-loader": "^7.1.2",
+		"gh-pages": "^6.3.0",
+		"html-webpack-plugin": "^5.6.0",
+		"style-loader": "^4.0.0",
+		"webpack": "^5.94.0",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^5.0.4"
+	}
 }
