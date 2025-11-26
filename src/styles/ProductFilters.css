@@ -1,0 +1,137 @@
+/* src/styles/ProductFilters.css */
+
+.filters-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.filters-panel {
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  background-color: #325368;
+  color: #FFFFFF;
+  border-radius: 8px 8px 0 0;
+}
+
+.filters-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.filters-close {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 1;
+  transition: opacity 0.2s;
+}
+
+.filters-close:hover {
+  opacity: 0.7;
+}
+
+.filters-content {
+  padding: 20px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #191919;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter-input,
+.filter-select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #191919;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+  outline: none;
+  border-color: #406C88;
+}
+
+.filters-actions {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  justify-content: flex-end;
+}
+
+.btn-filter-apply {
+  padding: 10px 24px;
+  background-color: #325368;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: lowercase;
+}
+
+.btn-filter-apply:hover {
+  background-color: #2a4455;
+}
+
+.btn-filter-reset {
+  padding: 10px 24px;
+  background-color: #F8F8F8;
+  color: #191919;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: lowercase;
+}
+
+.btn-filter-reset:hover {
+  background-color: #e8e8e8;
+}
+
