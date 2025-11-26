@@ -11,7 +11,9 @@ const BASE_PATH = process.env.NODE_ENV === 'production' ? '/ma1dd' : ''
 export const getPublicPath = path => {
 	// Убираем начальный слеш, если он есть
 	const cleanPath = path.startsWith('/') ? path.slice(1) : path
-	return `${BASE_PATH}/${cleanPath}`
+	// Если BASE_PATH пустой, возвращаем путь со слешем в начале
+	// Если BASE_PATH не пустой, добавляем его перед путем
+	return BASE_PATH ? `${BASE_PATH}/${cleanPath}` : `/${cleanPath}`
 }
 
 export default getPublicPath
