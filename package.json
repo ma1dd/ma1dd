@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Frontend for SanStar Analytics System",
   "main": "index.js",
-  "homepage": "ma1dd.github.io", 
+  "homepage": "https://ma1dd.github.io", 
   
   "scripts": {
     "start": "webpack serve --mode development", 

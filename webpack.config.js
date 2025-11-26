@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.js', // Точка входа
   output: {
-    path: path.resolve(__dirname, 'dist'), // Папка для выходных файлов
+    path: path.resolve(__dirname, 'build'), // Папка для выходных файлов
     filename: 'bundle.js', // Имя выходного файла
     publicPath: '/', // Важно для SPA
   },
